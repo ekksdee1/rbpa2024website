@@ -1,7 +1,7 @@
 .title-card
 {
-    height: 170px;
-    padding: 10%;
+    height: 1%;
+    padding: 5%;
     background-image: url(https://images.unsplash.com/photo-1639131285716-3fc7f624f138?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: 100%;
     background-attachment: fixed;
@@ -10,13 +10,14 @@
 .main-title
 {
     font-weight: bolder;
-    font-size:70px;
+    font-size:10vw;
     color:white;
 }
 
 .bar-of-nav
 {
     background-color: #60574E;
+    font-size: clamp(10px, 1.75vw, 25px);
 }
 
 #item
@@ -28,4 +29,30 @@
 {
     background-color: #443C34;
     color: white;
+}
+
+.logo
+{
+    height: clamp(20px, 3vw, 100px);;
+}
+
+.footer
+{
+    background-color: #60574E;
+}
+
+.col
+{
+    margin:2%;
+    padding:2%;   
+}
+
+p
+{
+    font-size: clamp( 5px, 1.75vw, 40px);
+}
+
+h2
+{
+    font-size: 80px;
 }
