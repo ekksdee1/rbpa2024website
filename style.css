@@ -49,5 +49,10 @@
 
 p
 {
-    font-size: clamp( 5px, 1.75vw, 25px);
+    font-size: clamp( 5px, 1.75vw, 40px);
+}
+
+h2
+{
+    font-size: 80px;
 }
