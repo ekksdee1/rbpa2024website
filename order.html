@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- title of the page-->
     <title>Game Day Grill Official Website - Ordering</title>
-<head>
-
 </head> 
 <body>
     <!-- navbar -->
@@ -32,17 +31,29 @@
     <!-- content -->
     <div class="container-fluid">
         <div class="row">
+            <div class="col-1"></div>
             <div class="col-4">
-                <h3>Contact Info</h3>
+                <h4>Contact Info</h4>
                 <label for="fName" class="form-label">First name</label><input type="text" class="form-control" name="fName" placeholder="John"><br>
                 <label for="lName" class="form-label">Last name</label><input type="text" class="form-control" name="lName" placeholder="Doe"><br>
                 <label for="pNumber" class="form-label">Phone number</label><input type="text" class="form-control" name="pNumber" placeholder="(xxx) xxx-xxxx"><br>
                 <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com">
             </div>
-            <div class="col-3"></div>
+            <div class="col-2"></div>
             <div class="col-5">
-                <h3>Current order</h3>
+                <h4>Current order</h4>
             </div>
+        </div><br><br>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+                <h4>How would you like to receive your food?</h4>
+                <button id="curb">Curbside</button>
+                <button id="pick">Pickup</button>
+                <button id="deli">Delivery</button>
+            </div>
+            <div class="col-2"></div>
         </div>
     </div>
 </body>
