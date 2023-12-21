@@ -39,6 +39,10 @@
 .footer
 {
     background-color: #60574E;
+    margin-bottom: 0px;
+    padding-top:1%;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
 .col
@@ -49,10 +53,29 @@
 
 p
 {
-    font-size: clamp( 5px, 1.75vw, 40px);
+    font-size: clamp( 10px, 1.5vw, 30px);
 }
 
 h2
 {
     font-size: 80px;
+}
+
+img
+{
+    border-radius: 10px;
+}
+
+#food-item
+{
+    border-color:#60574E;
+    background-color: #60574E;
+    border-radius: 10px;
+    margin:3%;
+    border-width:1px;
+}
+
+#food-item :hover
+{
+    background-color: #443C34;
 }
