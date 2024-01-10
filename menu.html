@@ -109,11 +109,22 @@
             Drinks
         </div>
     </div>
+
+    <!-- Starters -->
+    <div class="starters-items hidden">
+        <div class="food-boxes"></div>
+        <div class="food-boxes"></div>
+        <div class="food-boxes"></div>
+        <div class="food-boxes"></div>
+        <div class="food-boxes"></div>
+    </div>
     <!-- Temporary JavaScript -->
     <script>
         $(document).ready(function() {
+            $('.hidden').hide();
             $('.starters').on('click', function() {
-                $('.starters').hide();
+                $('.food-categories').hide();
+                $('.starters-items').show();
             });
         });
         
