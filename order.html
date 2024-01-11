@@ -29,6 +29,7 @@
             </div>
         </div>
     </nav>
+    <br>
 
     <!-- content -->
     <div class="container-fluid">
@@ -39,24 +40,47 @@
                 <label for="fName" class="form-label">First name</label><input type="text" class="form-control" name="fName" placeholder="John"><br>
                 <label for="lName" class="form-label">Last name</label><input type="text" class="form-control" name="lName" placeholder="Doe"><br>
                 <label for="pNumber" class="form-label">Phone number</label><input type="text" class="form-control" name="pNumber" placeholder="(XXX) XXX-XXXX"><br>
-                <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com">
-            </div>
-            <div class="col-2"></div>
-            <div class="col-5">
-                <h4>Current order</h4>
-            </div>
-        </div><br><br>
+                <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com"><br>
 
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-4">
                 <h4>How would you like to receive your food?</h4>
                 <button id="pick">Pickup</button>
                 <button id="deli">Delivery</button>
+                
+                <div id="pick-expand">
+                    <h4>Pickup order payment</h4>
+                    <p>How would you like to pay?</p>
+
+                    <label for="payment" class="form-label">Credit/Debit card</label><input type="checkbox" class="form-control" name="payment"><br>
+                    <label for="payment2" class="form-label">Cash</label><input type="checkbox" class="form-control" name="payment2"><br>
+                    
+                    <div id="cardPayment-expand">
+                        <label for="cardNum" class="form-label">Card Number</label><input type="text" class="form-control" name="cardNum" placeholder="XXXX XXXX XXXX XXXX"><br>
+                        <label for="cardFirstName" class="form-label">Card Holder First Name</label><input type="text" class="form-control" name="cardFirstName" placeholder="Jane"><br>
+                        <label for="cardLastName" class="form-label">Card Holder Last name</label><input type="text" class="form-control" name="cardLastName" placeholder="Doe"><br>
+                        <label for="expirationDate" class="form-label">Expiration Date</label><input type="text" class="form-control" name="expirationDate" placeholder="XX/XX">
+                    </div>
+
+                    <div id="cashPayment-expand">
+                        <p>Okay, be ready to pay with cash at the restaurant!</p>
+                    </div>
+                </div>
+                
+                <div id="deli-expand">
+                    <h4>Stadium delivery order information</h4>
+                    <p>We will need some more information to deliver your order to you!</p>
+
+                    <label for="seatNum" class="form-label">Seat Number</label><input type="text" class="form-control" name="seatNum" placeholder="A XXX">
+                </div>
             </div>
+
             <div class="col-2"></div>
-        </div>
+            <div class="col-5">
+                <h4>Current order</h4>
+                <!-- items in the user's cart will be added here -->
+            </div>
+        </div><br><br>
     </div>
+    
     <script href="main.js"></script>
 </body>
 
