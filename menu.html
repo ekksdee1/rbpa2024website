@@ -53,6 +53,12 @@
             height: 200px;
             display: inline-block;
         }
+        .b {
+            font-weight: bold;
+        }
+        .hover:hover {
+            cursor: pointer;
+        }
     </style>
 </head> 
 <body class="body">
@@ -66,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a id = "item" class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a id = "item" class="nav-link" href="#">Menu</a>
+                    <a id = "item" class="nav-link" href="menu.html">Menu</a>
                     <a id = "item" class="nav-link" href="order.html">Checkout</a>
                     <a id = "item" class="nav-link" href="reservation.html">Reservations</a>
                 </div>
@@ -90,29 +96,38 @@
     <!-- Food Categories -->
     <div class="food-categories container">
         <!-- Each category will consist of a background image and a category name-->
-        <div class="starters food-boxes">
+        <div class="starters food-boxes hover">
             Starters
         </div>
-        <div class="salads food-boxes">
+        <div class="salads food-boxes hover">
             Salads
         </div>
-        <div class="seafood food-boxes">
+        <div class="seafood food-boxes hover">
             Seafood
         </div>
-        <div class="burgers-and-sandwiches food-boxes">
+        <div class="burgers-and-sandwiches food-boxes hover">
             Burgers and Sandwiches
         </div>
-        <div class="sides food-boxes">
+        <div class="pizza food-boxes hover">
+            Pizza
+        </div>
+        <div class="sides food-boxes hover">
             Sides 
         </div>
-        <div class="kids-menu food-boxes">
+        <div class="kids-menu food-boxes hover">
             Kids Menu
         </div>
-        <div class="desserts food-boxes">
+        <div class="desserts food-boxes hover">
             Desserts
         </div>
-        <div class="Drinks food-boxes">
+        <div class="drinks food-boxes hover">
             Drinks
+        </div>
+        <div class='vegetarian food-boxes hover'>
+            Vegetarian
+        </div>
+        <div class="gluten-free food-boxes hover">
+            Gluten-Free
         </div>
     </div>
 
@@ -122,8 +137,8 @@
             Pretzel Bites
             <br>
             Price: $5.99
-            <div class="pretzel-bites-btn">
-                info
+            <div class="pretzel-bites-btn b hover">
+                View More &or;
             </div>
         </div>
         <div class="food-info-box pretzel-bites hidden">
@@ -131,17 +146,37 @@
             Price: $5.99<br>
             Calories: 450
             <hr>
-            20 Pretzel Bites served with cheese
+            A basket of 20 Pretzel Bites topped with salt and served with cheese.
         </div>
         <div class="food-boxes">
             Fried Pickles
             <br>
             Price: $5.99
+            <div class="fried-pickles-btn b hover">
+                View More &or;
+            </div>
+        </div>
+        <div class="food-info-box fried-pickles hidden">
+            Fried Pickles<br>
+            Price: $5.99<br>
+            Calories: 400
+            <hr>
+            A basket filled with 15 of our Fried Pickles served with ranch and your choice of sauces.
         </div>
         <div class="food-boxes">
             Cheese Curds
             <br>
             Price: $5.99
+            <div class="cheese-curds-btn b hover">
+                View More &or;
+            </div>
+        </div>
+        <div class="food-info-box cheese-curds hidden">
+            Cheese Curds<br>
+            Price: $5.99<br>
+            Calories: 350
+            <hr>
+            A bucket filled with approximately 50 cheese curds with your choice of Cheddar, cheese option, or cheese option. You could even multiple cheeses.
         </div>
         <div class="food-boxes">
             Cheese Bread
@@ -153,11 +188,12 @@
             <br>
             Price: $5.99
         </div>
-        <div class="food-boxes">
-            High Quality Air
-            <br>
-            Price: $0.00
-        </div>
+    </div>
+
+    <div class = "footer">
+        <p>Contact Information: </p>
+        <p>Phone: (555)-321-1234</p>
+        <p>Email: GameDayGrill@GDayGrill.com</p>
     </div>
     <!-- Temporary JavaScript -->
     <script>
@@ -169,6 +205,12 @@
             });
             $('.pretzel-bites-btn').on('click', function() {
                 $('.pretzel-bites').toggle();
+            });
+            $('.fried-pickles-btn').on('click', function() {
+                $('.fried-pickles').toggle();
+            });
+            $('.cheese-curds-btn').on('click', function() {
+                $('.cheese-curds').toggle();
             });
         });
         
