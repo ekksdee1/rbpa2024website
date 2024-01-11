@@ -1,0 +1,3 @@
+$("deli").on("click", function(){
+    
+})

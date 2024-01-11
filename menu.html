@@ -47,6 +47,12 @@
             margin-top: 15px;      
             align-content: end;   
         }
+        .food-info-box {
+            min-width: auto;
+            max-width: 500px;
+            height: 200px;
+            display: inline-block;
+        }
     </style>
 </head> 
 <body class="body">
@@ -112,11 +118,46 @@
 
     <!-- Starters -->
     <div class="starters-items hidden">
-        <div class="food-boxes"></div>
-        <div class="food-boxes"></div>
-        <div class="food-boxes"></div>
-        <div class="food-boxes"></div>
-        <div class="food-boxes"></div>
+        <div class="food-boxes">
+            Pretzel Bites
+            <br>
+            Price: $5.99
+            <div class="pretzel-bites-btn">
+                info
+            </div>
+        </div>
+        <div class="food-info-box pretzel-bites hidden">
+            Pretzel Bites<br>
+            Price: $5.99<br>
+            Calories: 450
+            <hr>
+            20 Pretzel Bites served with cheese
+        </div>
+        <div class="food-boxes">
+            Fried Pickles
+            <br>
+            Price: $5.99
+        </div>
+        <div class="food-boxes">
+            Cheese Curds
+            <br>
+            Price: $5.99
+        </div>
+        <div class="food-boxes">
+            Cheese Bread
+            <br>
+            Price: $11.99
+        </div>
+        <div class="food-boxes">
+            Mozzarella Cheese Sticks
+            <br>
+            Price: $5.99
+        </div>
+        <div class="food-boxes">
+            High Quality Air
+            <br>
+            Price: $0.00
+        </div>
     </div>
     <!-- Temporary JavaScript -->
     <script>
@@ -126,9 +167,15 @@
                 $('.food-categories').hide();
                 $('.starters-items').show();
             });
+            $('.pretzel-bites-btn').on('click', function() {
+                $('.pretzel-bites').toggle();
+            });
         });
         
     </script>
 </body>
 
 </html>
+<!--
+    add navbar for food categories when clicked on a food category
+-->
