@@ -33,7 +33,7 @@
         }
         .food-boxes {
             width: 200px;
-            height: 200px;
+            min-height: 200px;
             border-color: wheat;
             border-width: 5px;
             background-color: goldenrod;
@@ -134,26 +134,38 @@
     <!-- Starters -->
     <div class="starters-items hidden">
         <div class="food-boxes">
-            Pretzel Bites
-            <br>
-            Price: $5.99
-            <div class="pretzel-bites-btn b hover">
-                View More &or;
+            <div class="pretzel-bites">
+                <div class="pretzel-bites-item">
+                    Pretzel Bites
+                    <br>
+                    Price: $5.99
+                    <br>
+                    <div class="pretzel-bites-more b hover">
+                        View More &or;
+                    </div>
+                </div>
+                <div class="pretzel-bites-info hidden">
+                    Pretzel Bites<br>
+                    Price: $5.99<br>
+                    Calories: 450
+                    <hr>
+                    A basket of 20 Pretzel Bites topped with salt and served with cheese.
+                    <br>
+                    <div class="pretzel-bites-less b hover">
+                        View Less &and;
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="food-info-box pretzel-bites hidden">
-            Pretzel Bites<br>
-            Price: $5.99<br>
-            Calories: 450
-            <hr>
-            A basket of 20 Pretzel Bites topped with salt and served with cheese.
         </div>
         <div class="food-boxes">
             Fried Pickles
             <br>
             Price: $5.99
-            <div class="fried-pickles-btn b hover">
+            <div class="fried-pickles-more b hover">
                 View More &or;
+            </div>
+            <div class="fried-pickles-less b hover hidden">
+                View Less &and;
             </div>
         </div>
         <div class="food-info-box fried-pickles hidden">
@@ -167,8 +179,11 @@
             Cheese Curds
             <br>
             Price: $5.99
-            <div class="cheese-curds-btn b hover">
+            <div class="cheese-curds-more b hover">
                 View More &or;
+            </div>
+            <div class="cheese-curds-less b hover hidden">
+                View Less &and;
             </div>
         </div>
         <div class="food-info-box cheese-curds hidden">
@@ -203,14 +218,33 @@
                 $('.food-categories').hide();
                 $('.starters-items').show();
             });
-            $('.pretzel-bites-btn').on('click', function() {
-                $('.pretzel-bites').toggle();
+            $('.pretzel-bites-more').on('click', function() {
+                $('.pretzel-bites-info').show();
+                $('.pretzel-bites-item').hide();
             });
-            $('.fried-pickles-btn').on('click', function() {
-                $('.fried-pickles').toggle();
+            $('.pretzel-bites-less').on('click', function() {
+                $('.pretzel-bites-info').hide();
+                $('.pretzel-bites-item').show();
             });
-            $('.cheese-curds-btn').on('click', function() {
-                $('.cheese-curds').toggle();
+            $('.fried-pickles-more').on('click', function() {
+                $('.fried-pickles').show();
+                $('.fried-pickles-more').hide();
+                $('.fried-pickles-less').show();
+            });
+            $('.fried-pickles-less').on('click', function() {
+                $('.fried-pickles').hide();
+                $('.fried-pickles-more').show();
+                $('.fried-pickles-less').hide();
+            });
+            $('.cheese-curds-more').on('click', function() {
+                $('.cheese-curds').show();
+                $('.cheese-curds-more').hide();
+                $('.cheese-curds-less').show();
+            });
+            $('.cheese-curds-less').on('click', function() {
+                $('.cheese-curds').hide();
+                $('.cheese-curds-more').show();
+                $('.cheese-curds-less').hide();
             });
         });
         
