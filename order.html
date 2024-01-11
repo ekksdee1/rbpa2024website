@@ -13,17 +13,19 @@
 </head> 
 <body>
     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-sm bg-body-tertiary" alt="Navigation bar">
+    <nav class="bar-of-nav navbar navbar-expand-sm sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse navbar-text" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html" alt="Link to the landing page">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html" alt="Link to the menu page">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="order.html" alt="Link to the order page">Order Now!</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reservation.html" alt="Link to the reservation page">Reservations</a></li>
-                </ul>
+            <a id = "item" class="navbar-brand" href="#"><img class = "logo" src = "Images/GDG.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a id = "item" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a id = "item" class="nav-link" href="menu.html">Menu</a>
+                    <a id = "item" class="nav-link" href="order.html">Checkout</a>
+                    <a id = "item" class="nav-link" href="reservation.html">Reservations</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -36,7 +38,7 @@
                 <h4>Contact Info</h4>
                 <label for="fName" class="form-label">First name</label><input type="text" class="form-control" name="fName" placeholder="John"><br>
                 <label for="lName" class="form-label">Last name</label><input type="text" class="form-control" name="lName" placeholder="Doe"><br>
-                <label for="pNumber" class="form-label">Phone number</label><input type="text" class="form-control" name="pNumber" placeholder="(xxx) xxx-xxxx"><br>
+                <label for="pNumber" class="form-label">Phone number</label><input type="text" class="form-control" name="pNumber" placeholder="(XXX) XXX-XXXX"><br>
                 <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com">
             </div>
             <div class="col-2"></div>
@@ -49,13 +51,13 @@
             <div class="col-1"></div>
             <div class="col-4">
                 <h4>How would you like to receive your food?</h4>
-                <button id="curb">Curbside</button>
                 <button id="pick">Pickup</button>
                 <button id="deli">Delivery</button>
             </div>
             <div class="col-2"></div>
         </div>
     </div>
+    <script href="main.js"></script>
 </body>
 
 </html>
