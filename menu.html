@@ -37,21 +37,17 @@
             border-color: wheat;
             border-width: 5px;
             background-color: goldenrod;
-            display: inline-block;
+            display:inline-flex;
             margin: 10px;
+            padding: 5px;
             text-align: center;
             border-radius: 12px;
             border-style: solid;
+            justify-content: center;
         }
         .food-categories {
             margin-top: 15px;      
             align-content: end;   
-        }
-        .food-info-box {
-            min-width: auto;
-            max-width: 500px;
-            height: 200px;
-            display: inline-block;
         }
         .b {
             font-weight: bold;
@@ -132,7 +128,7 @@
     </div>
 
     <!-- Starters -->
-    <div class="starters-items hidden">
+    <div class="starters-items hidden food-categories container">
         <div class="food-boxes pretzel-bites">
             <div class="pretzel-bites-item">
                 Pretzel Bites
@@ -306,8 +302,9 @@
 </html>
 <!--
     add navbar for food categories when clicked on a food category
-    -----
-    Template
+    ---------
+    Templates
+    ---------
     <div class="food-boxes ">
         <div class="-item">
             
@@ -330,4 +327,18 @@
             </div>
         </div>
     </div>
+    ------
+    $('.').on('click', function() {
+        $('.food-categories').hide();
+        $('.-items').show();
+    });
+    ------
+    $('.-more').on('click', function() {
+        $('.-info').show();
+        $('.-item').hide();
+    });
+    $('.-less').on('click', function() {
+        $('.-info').hide();
+        $('.-item').show();
+    });
 -->
