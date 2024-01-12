@@ -76,6 +76,20 @@ img
     color:white;
 }
 
+#food-item .btn
+{
+    background-color: #443C34;
+    border-radius:10px;
+    color:white;
+    margin-top:5%;
+}
+
+#food-item .btn :hover
+{
+    background-color:#60574E;
+    border-color: #443C34;
+}
+
 #pick-expand, #deli-expand, #cardPayment-expand, #cashPayment-expand {
     visibility: hidden;
 }
