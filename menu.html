@@ -34,16 +34,26 @@
         .food-boxes {
             width: 200px;
             min-height: 200px;
-            border-color: wheat;
-            border-width: 5px;
-            background-color: goldenrod;
+            border-color: #60574E;
+            background-color: #60574E;
             display:inline-flex;
             margin: 10px;
             padding: 5px;
-            text-align: center;
             border-radius: 12px;
             border-style: solid;
             justify-content: center;
+        }
+        .img-box {
+            width: 150px;
+            height: 100px;
+        }
+        .food-type-box {
+            background-color: #443C34;
+            border-radius: 12px;
+            padding: 5px;
+            height: 100%;
+            width: 150px;
+            text-align: center;
         }
         .food-categories {
             margin-top: 15px;      
@@ -93,37 +103,59 @@
     <div class="food-categories container">
         <!-- Each category will consist of a background image and a category name-->
         <div class="starters food-boxes hover">
-            Starters
+            <div class="food-type-box">
+                Starters
+            </div>
         </div>
         <div class="salads food-boxes hover">
-            Salads
+            <div class="food-type-box">
+               Salads 
+            </div>
         </div>
         <div class="seafood food-boxes hover">
-            Seafood
+            <div class="food-type-box">
+                Seafood 
+             </div>
         </div>
         <div class="burgers-and-sandwiches food-boxes hover">
-            Burgers and Sandwiches
+            <div class="food-type-box">
+                Burgers and Sandwiches 
+             </div>
         </div>
         <div class="pizza food-boxes hover">
-            Pizza
+            <div class="food-type-box">
+                Pizza 
+             </div>
         </div>
         <div class="sides food-boxes hover">
-            Sides 
+            <div class="food-type-box">
+                Sides 
+             </div>
         </div>
         <div class="kids-menu food-boxes hover">
-            Kids Menu
+            <div class="food-type-box">
+                Kids Menu 
+             </div>
         </div>
         <div class="desserts food-boxes hover">
-            Desserts
+            <div class="food-type-box">
+                Desserts 
+             </div>
         </div>
         <div class="drinks food-boxes hover">
-            Drinks
+            <div class="food-type-box">
+                Drinks 
+             </div>
         </div>
         <div class='vegetarian food-boxes hover'>
-            Vegetarian
+            <div class="food-type-box">
+                Vegetarian 
+             </div>
         </div>
         <div class="gluten-free food-boxes hover">
-            Gluten-Free
+            <div class="food-type-box">
+                Gluten-Free 
+             </div>
         </div>
     </div>
 
@@ -131,7 +163,7 @@
     <div class="starters-items hidden food-categories container">
         <div class="food-boxes pretzel-bites">
             <div class="pretzel-bites-item">
-                Pretzel Bites
+                A1. Pretzel Bites
                 <br>
                 Price: $5.99
                 <br>
@@ -140,7 +172,7 @@
                 </div>
             </div>
             <div class="pretzel-bites-info hidden">
-                Pretzel Bites<br>
+                A1. Pretzel Bites<br>
                 Price: $5.99<br>
                 Calories: 450
                 <hr>
@@ -155,7 +187,7 @@
         </div>
         <div class="food-boxes fried-pickles">
             <div class="fried-pickles-item">
-                Fried Pickles
+                A2. Fried Pickles
                 <br>
                 Price: $5.99
                 <br>
@@ -164,7 +196,7 @@
                 </div>
             </div>
             <div class="fried-pickles-info hidden">
-                Fried Pickles<br>
+                A2. Fried Pickles<br>
                 Price: $5.99<br>
                 Calories: 400
                 <hr>
@@ -177,7 +209,7 @@
         </div>
         <div class="food-boxes cheese-curds">
             <div class="cheese-curds-item">
-                Cheese Curds
+                A3. Cheese Curds
                 <br>
                 Price: $5.99
                 <br>
@@ -186,7 +218,7 @@
                 </div>
             </div>
             <div class="cheese-curds-info hidden">
-                Cheese Curds<br>
+                A3. Cheese Curds<br>
                 Price: $5.99<br>
                 Calories: 350
                 <hr>
@@ -199,7 +231,7 @@
         </div>
         <div class="food-boxes cheese-bread">
             <div class="cheese-bread-item">
-                Cheese Bread
+                A4. Cheese Bread
                 <br>
                 Price: $11.99
                 <br>
@@ -208,7 +240,7 @@
                 </div>
             </div>
             <div class="cheese-bread-info hidden">
-                Cheese Bread<br>
+                A4. Cheese Bread<br>
                 Price: $11.99<br>
                 Calories: 1200
                 <hr>
@@ -221,7 +253,7 @@
         </div>
         <div class="food-boxes mozzarella-sticks">
             <div class="mozzarella-sticks-item">
-                Mozzarella Sticks
+                A5. Mozzarella Sticks
                 <br>
                 Price: $5.99
                 <br>
@@ -230,7 +262,7 @@
                 </div>
             </div>
             <div class="mozzarella-sticks-info hidden">
-                Mozzarella Sticks<br>
+                A5. Mozzarella Sticks<br>
                 Price: $5.99<br>
                 Calories: 540
                 <hr>
@@ -246,7 +278,7 @@
     <div class="salad-items hidden food-categories container">
         <div class="food-boxes caesar-salad">
             <div class="caesar-salad-item">
-                Caesar Salad
+                B1. Caesar Salad
                 <br>
                 Price: $5.99
                 <br>
@@ -255,7 +287,7 @@
                 </div>
             </div>
             <div class="caesar-salad-info hidden">
-                Caesar Salad<br>
+                B1. Caesar Salad<br>
                 Price: $5.99<br>
                 Calories: 450
                 <hr>
@@ -268,7 +300,7 @@
         </div>
         <div class="food-boxes house-salad">
             <div class="house-salad-item">
-                House Salad
+                B2. House Salad
                 <br>
                 Price: $5.99
                 <br>
@@ -277,7 +309,7 @@
                 </div>
             </div>
             <div class="house-salad-info hidden">
-                House Salad<br>
+                B2. House Salad<br>
                 Price: $5.99<br>
                 Calories: 400
                 <hr>
@@ -290,7 +322,7 @@
         </div>
         <div class="food-boxes grilled-chicken-salad">
             <div class="grilled-chicken-salad-item">
-                Grilled Chicken Salad
+                B3. Grilled Chicken Salad
                 <br>
                 Price: $5.99
                 <br>
@@ -299,7 +331,7 @@
                 </div>
             </div>
             <div class="grilled-chicken-salad-info hidden">
-                Grilled Chicken Salad<br>
+                B3. Grilled Chicken Salad<br>
                 Price: $5.99<br>
                 Calories: 400
                 <hr>
@@ -315,7 +347,7 @@
     <div class="seafood-items hidden food-categories container">
         <div class="food-boxes fish-n-chips">
             <div class="fish-n-chips-item">
-                Fish N' Chips
+                C1. Fish N' Chips
                 <br>
                 Price: $7.99
                 <br>
@@ -324,7 +356,7 @@
                 </div>
             </div>
             <div class="fish-n-chips-info hidden">
-                Fish N' Chips<br>
+                C1. Fish N' Chips<br>
                 Price: $7.99<br>
                 Calories: 800
                 <hr>
