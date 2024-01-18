@@ -48,12 +48,12 @@ function makeItem(input, input2){
     // console.log("pushed to shopping cart array");
     var name = menu[newItem.type][newItem.num];
     alert(name + " added to your cart.");
-    displayItem(input, input2);
+    displayItem(newItem);
 }
 
-function displayItem(letter, num){
-    const display = document.body.getElementById("currentOrder");
-    display.appendChild(shoppingCartDisplay[letter, num]);
+function displayItem(item){
+    const display = document.getElementById("currentOrder");
+    display.appendChild(shoppingCartDisplay[item.type, item.num]);
 }
 
 class foodItem {
