@@ -47,8 +47,8 @@
 
 .col
 {
-    margin:2%;
-    padding:2%;   
+    margin-left:2%;
+    padding-right:2%;   
 }
 
 p
@@ -74,24 +74,24 @@ img
     margin:3%;
     border-width:1px;
     color:white;
+    padding:2%;
 }
 
 #food-item .btn
 {
     background-color: #443C34;
     border-radius:10px;
+    border: 5px;
     color:white;
     margin-top:5%;
 }
 
-#food-item .btn :hover
+.btn:hover
 {
-    background-color:#60574E;
-    border-color: #443C34;
+    background-color:#60574E !important;
+    border-color: #443C34 !important; 
 }
 
 #pick-expand, #deli-expand, #cardPayment-expand, #cashPayment-expand {
     display: none;
 }
-
-
