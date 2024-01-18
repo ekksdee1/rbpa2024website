@@ -149,6 +149,8 @@
                 <div class="pretzel-bites-less b hover">
                     View Less &and;
                 </div>
+
+                <button class="addToCart" onclick="addItem('Pretzel Bites', 5.99)">Add to Cart</button>
             </div>
         </div>
         <div class="food-boxes fried-pickles">
@@ -240,7 +242,101 @@
             </div>
         </div>
     </div>
-
+    <!-- Salads -->
+    <div class="salad-items hidden food-categories container">
+        <div class="food-boxes caesar-salad">
+            <div class="caesar-salad-item">
+                Caesar Salad
+                <br>
+                Price: $5.99
+                <br>
+                <div class="caesar-salad-more b hover">
+                    View More &or;
+                </div>
+            </div>
+            <div class="caesar-salad-info hidden">
+                Caesar Salad<br>
+                Price: $5.99<br>
+                Calories: 450
+                <hr>
+                Romaine lettuce, parmesan cheese, our homemade croutons, and our homemade caesar salad dressing.
+                <br>
+                <div class="caesar-salad-less b hover">
+                    View Less &and;
+                </div>
+            </div>
+        </div>
+        <div class="food-boxes house-salad">
+            <div class="house-salad-item">
+                House Salad
+                <br>
+                Price: $5.99
+                <br>
+                <div class="house-salad-more b hover">
+                    View More &or;
+                </div>
+            </div>
+            <div class="house-salad-info hidden">
+                House Salad<br>
+                Price: $5.99<br>
+                Calories: 400
+                <hr>
+                Romaine and iceberg lettuce, shredded cheese, shredded carrots, tomato, cucumber, onion, hard-boiled eggs, our homemade croutons, and your choice of our homemade ranch dressing, blue cheese, french, or Italian.
+                <br>
+                <div class="house-salad-less b hover">
+                    View Less &and;
+                </div>
+            </div>
+        </div>
+        <div class="food-boxes grilled-chicken-salad">
+            <div class="grilled-chicken-salad-item">
+                Grilled Chicken Salad
+                <br>
+                Price: $5.99
+                <br>
+                <div class="grilled-chicken-salad-more b hover">
+                    View More &or;
+                </div>
+            </div>
+            <div class="grilled-chicken-salad-info hidden">
+                Grilled Chicken Salad<br>
+                Price: $5.99<br>
+                Calories: 400
+                <hr>
+                Romaine and iceberg lettuce, marinated chunks of our grilled chicken, shredded cheese, shredded carrots, tomato, cucumber, onion, hard-boiled eggs, our homemade croutons, and your choice of our homemade ranch dressing, blue cheese, french, or Italian.
+                <br>
+                <div class="grilled-chicken-salad-less b hover">
+                    View Less &and;
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seafood -->
+    <div class="seafood-items hidden food-categories container">
+        <div class="food-boxes fish-n-chips">
+            <div class="fish-n-chips-item">
+                Fish N' Chips
+                <br>
+                Price: $7.99
+                <br>
+                <div class="fish-n-chips-more b hover">
+                    View More &or;
+                </div>
+            </div>
+            <div class="fish-n-chips-info hidden">
+                Fish N' Chips<br>
+                Price: $7.99<br>
+                Calories: 800
+                <hr>
+                Our hand-battered perch that is fried and served with fries.
+                <br>
+                <div class="fish-n-chips-less b hover">
+                    View Less &and;
+                </div>
+            </div>
+        </div>
+        
+    </div>
     <div class = "footer">
         <p>Contact Information: </p>
         <p>Phone: (555)-321-1234</p>
@@ -294,9 +390,51 @@
                 $('.mozzarella-sticks-info').hide();
                 $('.mozzarella-sticks-item').show();
             });
+            $('.salads').on('click', function() {
+                $('.food-categories').hide();
+                $('.salad-items').show();
+            });
+            $('.caesar-salad-more').on('click', function() {
+                $('.caesar-salad-info').show();
+                $('.caesar-salad-item').hide();
+            });
+            $('.caesar-salad-less').on('click', function() {
+                $('.caesar-salad-info').hide();
+                $('.caesar-salad-item').show();
+            });
+            $('.house-salad-more').on('click', function() {
+                $('.house-salad-info').show();
+                $('.house-salad-item').hide();
+            });
+            $('.house-salad-less').on('click', function() {
+                $('.house-salad-info').hide();
+                $('.house-salad-item').show();
+            });
+            $('.grilled-chicken-salad-more').on('click', function() {
+                $('.grilled-chicken-salad-info').show();
+                $('.grilled-chicken-salad-item').hide();
+            });
+            $('.grilled-chicken-salad-less').on('click', function() {
+                $('.grilled-chicken-salad-info').hide();
+                $('.grilled-chicken-salad-item').show();
+            });
+            $('.seafood').on('click', function() {
+                $('.food-categories').hide();
+                $('.seafood-items').show();
+            });
+            $('.fish-n-chips-more').on('click', function() {
+                $('.fish-n-chips-info').show();
+                $('.fish-n-chips-item').hide();
+            });
+            $('.fish-n-chips-less').on('click', function() {
+                $('.fish-n-chips-info').hide();
+                $('.fish-n-chips-item').show();
+            });
         });
         
     </script>
+
+    <script href="main.js"></script>
 </body>
 
 </html>
@@ -305,40 +443,40 @@
     ---------
     Templates
     ---------
-    <div class="food-boxes ">
-        <div class="-item">
-            
-            <br>
-            Price: $
-            <br>
-            <div class="-more b hover">
-                View More &or;
+            <div class="food-boxes ">
+                <div class="-item">
+                    
+                    <br>
+                    Price: $
+                    <br>
+                    <div class="-more b hover">
+                        View More &or;
+                    </div>
+                </div>
+                <div class="-info hidden">
+                    <br>
+                    Price: $<br>
+                    Calories: 
+                    <hr>
+                    
+                    <br>
+                    <div class="-less b hover">
+                        View Less &and;
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="-info hidden">
-            <br>
-            Price: $<br>
-            Calories: 
-            <hr>
-            
-            <br>
-            <div class="-less b hover">
-                View Less &and;
-            </div>
-        </div>
-    </div>
     ------
-    $('.').on('click', function() {
-        $('.food-categories').hide();
-        $('.-items').show();
-    });
+            $('.').on('click', function() {
+                $('.food-categories').hide();
+                $('.-items').show();
+            });
     ------
-    $('.-more').on('click', function() {
-        $('.-info').show();
-        $('.-item').hide();
-    });
-    $('.-less').on('click', function() {
-        $('.-info').hide();
-        $('.-item').show();
-    });
+            $('.-more').on('click', function() {
+                $('.-info').show();
+                $('.-item').hide();
+            });
+            $('.-less').on('click', function() {
+                $('.-info').hide();
+                $('.-item').show();
+            });
 -->
