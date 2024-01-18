@@ -43,21 +43,24 @@
                 <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com"><br>
 
                 <h4>How would you like to receive your food?</h4>
-                <button id="pick">Pickup</button>
-                <button id="deli">Delivery</button>
+                <button onclick="makeVisible('pick-expand'); makeInvisible('deli-expand')">Pickup</button>
+                <button onclick="makeVisible('deli-expand'); makeInvisible('pick-expand')">Delivery</button><br><br>
                 
                 <div id="pick-expand">
                     <h4>Pickup order payment</h4>
                     <p>How would you like to pay?</p>
 
-                    <label for="payment" class="form-label">Credit/Debit card</label><input type="checkbox" class="form-control" name="payment"><br>
-                    <label for="payment2" class="form-label">Cash</label><input type="checkbox" class="form-control" name="payment2"><br>
+                    <input type="checkbox" class="form-check-input" name="payment" id="payment"><label for="payment" class="form-label"> Credit/Debit card</label><br>
+                    <input type="checkbox" class="form-check-input" name="payment2" id="payment2"><label for="payment2" class="form-label"> Cash</label><br>
                     
                     <div id="cardPayment-expand">
                         <label for="cardNum" class="form-label">Card Number</label><input type="text" class="form-control" name="cardNum" placeholder="XXXX XXXX XXXX XXXX"><br>
                         <label for="cardFirstName" class="form-label">Card Holder First Name</label><input type="text" class="form-control" name="cardFirstName" placeholder="Jane"><br>
                         <label for="cardLastName" class="form-label">Card Holder Last name</label><input type="text" class="form-control" name="cardLastName" placeholder="Doe"><br>
-                        <label for="expirationDate" class="form-label">Expiration Date</label><input type="text" class="form-control" name="expirationDate" placeholder="XX/XX">
+                        <label for="expirationDate" class="form-label">Expiration Date</label><input type="text" class="form-control" name="expirationDate" placeholder="XX/XX"><br>
+                        <label for="CVV" class="form-label">CVV Code</label><input type="text" class="form-control" name="CVV" placeholder="XXX"><br>
+
+                        <button onclick="alert('Thank you, your information has been received.');">Submit</button>
                     </div>
 
                     <div id="cashPayment-expand">
@@ -67,7 +70,7 @@
                 
                 <div id="deli-expand">
                     <h4>Stadium delivery order information</h4>
-                    <p>We will need some more information to deliver your order to you!</p>
+                    <p>We will need additional information to deliver your order to you!</p>
 
                     <label for="seatNum" class="form-label">Seat Number</label><input type="text" class="form-control" name="seatNum" placeholder="A XXX">
                 </div>
@@ -81,7 +84,7 @@
         </div><br><br>
     </div>
     
-    <script href="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

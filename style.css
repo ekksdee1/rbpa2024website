@@ -91,7 +91,7 @@ img
 }
 
 #pick-expand, #deli-expand, #cardPayment-expand, #cashPayment-expand {
-    visibility: hidden;
+    display: none;
 }
 
 
