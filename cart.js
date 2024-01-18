@@ -1,5 +1,18 @@
 var shoppingCart = [];
-var menu = [
+const shoppingCartDisplay = [
+    ["Pretzel Bites.......$5.99", "Fried Pickles.......$5.99", "Cheese Curds........$5.99", "Cheese Bread........$11.99", "Mozzarella Sticks...$5.99"],
+    ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
+    ["Fish N' Chips"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+];
+const menu = [
     ["Pretzel Bites", "Fried Pickles", "Cheese Curds", "Cheese Bread", "Mozzarella Sticks"],
     ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
     ["Fish N' Chips"],
@@ -13,7 +26,7 @@ var menu = [
     []
 ];
 
-var prices = [
+const prices = [
     [5.99, 5.99, 5.99, 11.99, 5.99],
     [5.99, 5.99, 5.99],
     [7.99],
@@ -33,8 +46,14 @@ function makeItem(input, input2){
     // console.log("newItem made"); 
     shoppingCart.push(newItem);
     // console.log("pushed to shopping cart array");
-    var name = menu[input][parseInt(input2)];
+    var name = menu[newItem.type][newItem.num];
     alert(name + " added to your cart.");
+    displayItem(input, input2);
+}
+
+function displayItem(letter, num){
+    const display = document.body.getElementById("currentOrder");
+    display.appendChild(shoppingCartDisplay[letter, num]);
 }
 
 class foodItem {
@@ -216,5 +235,8 @@ class foodItem {
             type = 99;
             alert("Letter not recognized");
         }
+
+        this.type = type;
+        this.num = num;
     }
 }

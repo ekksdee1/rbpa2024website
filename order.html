@@ -78,13 +78,16 @@
 
             <div class="col-2"></div>
             <div class="col-5">
-                <h4>Current order</h4>
-                <!-- items in the user's cart will be added here -->
-                <button 
-                    onclick="var input = prompt('Please enter the letter of food item identifier (listed on the menu:)');  
-                    var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
-                    makeItem(input, input2);"
-                >Add Item</button>
+                <div class="currentOrder">
+                    <h4>Current order</h4>
+                    <!-- items in the user's cart will be added here via js -->
+                    <button 
+                        onclick="var input = prompt('Please enter the letter of food item identifier (listed on the menu:)');  
+                        var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
+                        makeItem(input, input2);"
+                    >Add Item</button>
+                </div>
+                
             </div>
         </div><br><br>
     </div>
