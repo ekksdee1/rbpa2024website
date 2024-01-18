@@ -47,8 +47,8 @@
 
 .col
 {
-    margin:2%;
-    padding:2%;   
+    margin-left:2%;
+    padding-right:2%;   
 }
 
 p
@@ -72,26 +72,20 @@ img
     background-color: #60574E;
     border-radius: 10px;
     margin:3%;
-    border-width:1px;
     color:white;
+    padding:2%;
+    border-width:2px !important;
+    transition-duration: 0.1s;
 }
 
-#food-item .btn
-{
-    background-color: #443C34;
-    border-radius:10px;
-    color:white;
-    margin-top:5%;
-}
 
-#food-item .btn :hover
+
+#food-item:hover
 {
-    background-color:#60574E;
-    border-color: #443C34;
+    background-color: #443C34!important;
+    border-color:#60574E !important;
 }
 
 #pick-expand, #deli-expand, #cardPayment-expand, #cashPayment-expand {
     display: none;
 }
-
-
