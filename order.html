@@ -64,7 +64,7 @@
                     </div>
 
                     <div id="cashPayment-expand">
-                        <p>Okay, be ready to pay with cash at the restaurant!</p>
+                        <p>Okay, be ready to pay with cash at the restaurant! Your total is: </p>
                     </div>
                 </div>
                 
@@ -80,11 +80,17 @@
             <div class="col-5">
                 <h4>Current order</h4>
                 <!-- items in the user's cart will be added here -->
+                <button 
+                    onclick="var input = prompt('Please enter the letter of food item identifier (listed on the menu:)');  
+                    var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
+                    makeItem(input, input2);"
+                >Add Item</button>
             </div>
         </div><br><br>
     </div>
     
     <script src="main.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
