@@ -41,23 +41,23 @@ const prices = [
 ];
 
 function makeItem(input, input2){
-    // console.log("called");
     const newItem = new foodItem(input, input2);
-    // console.log("newItem made"); 
     shoppingCart.push(newItem);
-    // console.log("pushed to shopping cart array");
     var name = menu[newItem.type][newItem.num];
     alert(name + " added to your cart.");
     displayItem(newItem);
 }
 
+document.addEventListener("DOMContentLoaded", function(){
 function displayItem(item){
     const display = document.getElementById("currentOrder");
-    display.appendChild(shoppingCartDisplay[item.type, item.num]);
-}
+    var newElement = document.createElement("p");
+    newElement.innerHTML = shoppingCartDisplay[item.type][item.num];
+    display.appendChild(newElement);
+}});
 
 class foodItem {
-    constructor(identifier, identifier2) {
+    constructor(identifier, identifier2){
         var type = 99;
         var num = 99;
         if(identifier == 'A' || identifier == 'a'){
