@@ -45,16 +45,14 @@ function makeItem(input, input2){
     shoppingCart.push(newItem);
     var name = menu[newItem.type][newItem.num];
     alert(name + " added to your cart.");
-    displayItem(newItem);
+    return newItem;
 }
 
-document.addEventListener("DOMContentLoaded", function(){
 function displayItem(item){
-    const display = document.getElementById("currentOrder");
     var newElement = document.createElement("p");
     newElement.innerHTML = shoppingCartDisplay[item.type][item.num];
-    display.appendChild(newElement);
-}});
+    document.getElementById("currentOrder").appendChild(newElement);
+}
 
 class foodItem {
     constructor(identifier, identifier2){

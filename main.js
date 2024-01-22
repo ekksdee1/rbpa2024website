@@ -9,40 +9,65 @@ function makeInvisible(itemId){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    var cardCheckbox = document.getElementById("payment");
-    var cashCheckbox = document.getElementById("payment2");
+    var pick_cardCheckbox = document.getElementById("pick-payment");
+    var pick_cashCheckbox = document.getElementById("pick-payment2");
+    var deli_cardCheckbox = document.getElementById("deli-payment");
+    var deli_cashCheckbox = document.getElementById("deli-payment2");
 
-    cardCheckbox.addEventListener("change", function(){
+    pick_cardCheckbox.addEventListener("change", function(){
+        togglePaymentDivs();
+    })
+    pick_cashCheckbox.addEventListener("change", function(){
+        togglePaymentDivs();
+    })
+    deli_cardCheckbox.addEventListener("change", function(){
+        togglePaymentDivs();
+    })
+    deli_cashCheckbox.addEventListener("change", function(){
         togglePaymentDivs();
     })
 
-    cashCheckbox.addEventListener("change", function(){
-        togglePaymentDivs();
-    })
 
     function togglePaymentDivs(){
-        var cardPaymentDiv = document.getElementById("cardPayment-expand");
-        var cashPaymentDiv = document.getElementById("cashPayment-expand");
+        var pick_cardPaymentDiv = document.getElementById("pick-cardPayment-expand");
+        var pick_cashPaymentDiv = document.getElementById("pick-cashPayment-expand");
+        var deli_cardPaymentDiv = document.getElementById("deli-cardPayment-expand");
+        var deli_cashPaymentDiv = document.getElementById("deli-cashPayment-expand");
 
-        if(cardCheckbox.checked && cashCheckbox.checked){
+        if(pick_cardCheckbox.checked && pick_cashCheckbox.checked){
             alert("You cannot pay with both! Please select only one payment option.");
-            cashPaymentDiv.style.display = "none";
-            cardPaymentDiv.style.display = "none";
+            pick_cashPaymentDiv.style.display = "none";
+            pick_cardPaymentDiv.style.display = "none";
+        }
+        else if(pick_cardCheckbox.checked){
+            pick_cardPaymentDiv.style.display = "inline";
+            pick_cashPaymentDiv.style.display = "none";
+        }
+        else if(pick_cashCheckbox.checked){
+            pick_cashPaymentDiv.style.display = "inline";
+            pick_cardPaymentDiv.style.display = "none";
+        }
+        else if(!(pick_cardCheckbox.checked && pick_cashPaymentDiv.checked)){
+            pick_cashPaymentDiv.style.display = "none";
+            pick_cardPaymentDiv.style.display = "none";
         }
 
-        else if(cardCheckbox.checked){
-            cardPaymentDiv.style.display = "inline";
-            cashPaymentDiv.style.display = "none";
+        if(deli_cardCheckbox.checked && deli_cashCheckbox.checked){
+            alert("You cannot pay with both! Please select only one payment option.");
+            deli_cashPaymentDiv.style.display = "none";
+            deli_cardPaymentDiv.style.display = "none";
         }
-
-        else if(cashCheckbox.checked){
-            cashPaymentDiv.style.display = "inline";
-            cardPaymentDiv.style.display = "none";
+        else if(deli_cardCheckbox.checked){
+            deli_cardPaymentDiv.style.display = "inline";
+            deli_cashPaymentDiv.style.display = "none";
         }
-        
-        else if(!(cardCheckbox.checked && cashPaymentDiv.checked)){
-            cashPaymentDiv.style.display = "none";
-            cardPaymentDiv.style.display = "none";
+        else if(deli_cashCheckbox.checked){
+            deli_cashPaymentDiv.style.display = "inline";
+            deli_cardPaymentDiv.style.display = "none";
+        }
+        else if(!(deli_cardCheckbox.checked && deli_cashPaymentDiv.checked)){
+            deli_cashPaymentDiv.style.display = "none";
+            deli_cardPaymentDiv.style.display = "none";
         }
     }
 });
