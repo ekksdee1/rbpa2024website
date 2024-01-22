@@ -1,5 +1,6 @@
 var shoppingCart = [];
-const shoppingCartDisplay = [
+
+/* const shoppingCartDisplay = [
     ["Pretzel Bites.......$5.99", "Fried Pickles.......$5.99", "Cheese Curds........$5.99", "Cheese Bread........$11.99", "Mozzarella Sticks...$5.99"],
     ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
     ["Fish N' Chips"],
@@ -11,7 +12,7 @@ const shoppingCartDisplay = [
     [],
     [],
     []
-];
+]; */
 const menu = [
     ["Pretzel Bites", "Fried Pickles", "Cheese Curds", "Cheese Bread", "Mozzarella Sticks"],
     ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
@@ -48,9 +49,13 @@ function makeItem(input, input2){
     return newItem;
 }
 
-function displayItem(item){
+function displayItem(index){
+    const item = shoppingCart[index];
+    const name = menu[item.type][item.num];
+    const price = prices[item.type][item.num];
+    
     var newElement = document.createElement("p");
-    newElement.innerHTML = shoppingCartDisplay[item.type][item.num];
+    newElement.innerHTML = "" + name + "...$" + price;
     document.getElementById("currentOrder").appendChild(newElement);
 }
 
