@@ -88,6 +88,6 @@ img
     
 }
 
-#pick-expand, #deli-expand, #cardPayment-expand, #cashPayment-expand {
+#pick-expand, #deli-expand, #pick-cardPayment-expand, #pick-cashPayment-expand, #deli-cardPayment-expand, #deli-cashPayment-expand {
     display: none;
 }
