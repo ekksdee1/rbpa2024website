@@ -68,11 +68,12 @@ img
 
 #food-item
 {
-    border-color:#60574E;
+    border-color:#60574E !important;
     background-color: #60574E;
     border-radius: 10px;
     margin:3%;
     color:white;
+    border-style: double;
     padding:2%;
     border-width:2px !important;
     transition-duration: 0.1s;
@@ -84,6 +85,7 @@ img
 {
     background-color: #443C34!important;
     border-color:#60574E !important;
+    
 }
 
 #pick-expand, #deli-expand, #cardPayment-expand, #cashPayment-expand {
