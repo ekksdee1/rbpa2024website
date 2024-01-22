@@ -50,20 +50,20 @@
                     <h4>Pickup order payment</h4>
                     <p>How would you like to pay?</p>
 
-                    <input type="checkbox" class="form-check-input" name="payment" id="payment"><label for="payment" class="form-label"> Credit/Debit card</label><br>
-                    <input type="checkbox" class="form-check-input" name="payment2" id="payment2"><label for="payment2" class="form-label"> Cash</label><br>
+                    <input type="checkbox" class="form-check-input" name="pick-payment" id="pick-payment"><label for="pick-payment" class="form-label"> Credit/Debit card</label><br>
+                    <input type="checkbox" class="form-check-input" name="pick-payment2" id="pick-payment2"><label for="pick-payment2" class="form-label"> Cash</label><br>
                     
-                    <div id="cardPayment-expand">
-                        <label for="cardNum" class="form-label">Card Number</label><input type="text" class="form-control" name="cardNum" placeholder="XXXX XXXX XXXX XXXX"><br>
-                        <label for="cardFirstName" class="form-label">Card Holder First Name</label><input type="text" class="form-control" name="cardFirstName" placeholder="Jane"><br>
-                        <label for="cardLastName" class="form-label">Card Holder Last name</label><input type="text" class="form-control" name="cardLastName" placeholder="Doe"><br>
-                        <label for="expirationDate" class="form-label">Expiration Date</label><input type="text" class="form-control" name="expirationDate" placeholder="XX/XX"><br>
-                        <label for="CVV" class="form-label">CVV Code</label><input type="text" class="form-control" name="CVV" placeholder="XXX"><br>
+                    <div id="pick-cardPayment-expand">
+                        <label for="pick-cardNum" class="form-label">Card Number</label><input type="text" class="form-control" name="pick-cardNum" placeholder="XXXX XXXX XXXX XXXX"><br>
+                        <label for="pick-cardFirstName" class="form-label">Card Holder First Name</label><input type="text" class="form-control" name="pick-cardFirstName" placeholder="Jane"><br>
+                        <label for="pick-cardLastName" class="form-label">Card Holder Last name</label><input type="text" class="form-control" name="pick-cardLastName" placeholder="Doe"><br>
+                        <label for="pick-expirationDate" class="form-label">Expiration Date</label><input type="text" class="form-control" name="pick-expirationDate" placeholder="XX/XX"><br>
+                        <label for="pick-CVV" class="form-label">CVV Code</label><input type="text" class="form-control" name="pick-CVV" placeholder="XXX"><br>
 
-                        <button onclick="alert('Thank you, your information has been received.');">Submit</button>
+                        <button onclick="alert('Your information has been processed, expect your order to be ready in 10-15 minutes.');">Submit</button>
                     </div>
 
-                    <div id="cashPayment-expand">
+                    <div id="pick-cashPayment-expand">
                         <p>Okay, be ready to pay with cash at the restaurant! Your total is: </p>
                     </div>
                 </div>
@@ -72,7 +72,29 @@
                     <h4>Stadium delivery order information</h4>
                     <p>We will need additional information to deliver your order to you!</p>
 
-                    <label for="seatNum" class="form-label">Seat Number</label><input type="text" class="form-control" name="seatNum" placeholder="A XXX">
+                    <label for="seatNum" class="form-label">Seat Number</label><input type="text" class="form-control" name="seatNum" placeholder="A XXX"><br>
+
+                    <h4>Stadium delivery order payment</h4>
+                    <p>How would you like to pay?</p>
+
+                    <input type="checkbox" class="form-check-input" name="deli-payment" id="deli-payment"><label for="deli-payment" class="form-label"> Credit/Debit card</label><br>
+                    <input type="checkbox" class="form-check-input" name="deli-payment2" id="deli-payment2"><label for="deli-payment2" class="form-label"> Cash</label><br>
+                    
+                    <div id="deli-cardPayment-expand">
+                        <label for="deli-cardNum" class="form-label">Card Number</label><input type="text" class="form-control" name="deli-cardNum" placeholder="XXXX XXXX XXXX XXXX"><br>
+                        <label for="deli-cardFirstName" class="form-label">Card Holder First Name</label><input type="text" class="form-control" name="deli-cardFirstName" placeholder="Jane"><br>
+                        <label for="deli-cardLastName" class="form-label">Card Holder Last name</label><input type="text" class="form-control" name="deli-cardLastName" placeholder="Doe"><br>
+                        <label for="deli-expirationDate" class="form-label">Expiration Date</label><input type="text" class="form-control" name="deli-expirationDate" placeholder="XX/XX"><br>
+                        <label for="deli-CVV" class="form-label">CVV Code</label><input type="text" class="form-control" name="deli-CVV" placeholder="XXX"><br>
+
+                        <button onclick="alert('Your information has been processed, expect your order to be ready in 10-15 minutes.');">Submit</button>
+                    </div>
+
+                    <div id="deli-cashPayment-expand">
+                        <p>Okay, be ready to pay with cash at the restaurant! Your total is: </p>
+                        <button onclick="alert('Your information has been processed, expect your order to be ready in 10-15 minutes.');">Submit</button>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -82,9 +104,10 @@
                     <h4>Current order</h4>
                     <!-- items in the user's cart will be added here via js -->
                     <button 
-                        onclick="var input = prompt('Please enter the letter of food item identifier (listed on the menu:)');  
+                        onclick="var input = prompt('Please enter the letter of food item identifier (listed on the menu):');  
                         var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
-                        makeItem(input, input2);"
+                        var item = makeItem(input, input2);
+                        displayItem(item);"
                     >Add Item</button>
                 </div>
             </div>
