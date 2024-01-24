@@ -232,8 +232,8 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     document.getElementById("addItem").addEventListener("click", function(){
-        var input = prompt('Please enter the letter of food item identifier (listed on the menu):');  
-        var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
+        var input = prompt('Please enter ONLY the LETTER portion of the food item identifier \n\nThis would be listed on the menu (e.g. A1, C3)');  
+        var input2 = prompt('Please enter ONLY the NUMBER portion of the food item identifier \n\nThis would be listed on the menu (e.g. A1, C3)');
         var item = makeItem(input, input2);
         shoppingCart.push(item);
         displayItem(shoppingCart.length - 1);
