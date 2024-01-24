@@ -64,7 +64,7 @@
                     </div>
 
                     <div id="pick-cashPayment-expand">
-                        <p>Okay, be ready to pay with cash at the restaurant! Your total is: </p>
+                        <p>Okay, be ready to pay with cash at the restaurant!</p>
                     </div>
                 </div>
                 
@@ -91,7 +91,7 @@
                     </div>
 
                     <div id="deli-cashPayment-expand">
-                        <p>Okay, be ready to pay with cash at the restaurant! Your total is: </p>
+                        <p>Okay, be ready to pay with cash at the restaurant!</p>
                         <button onclick="alert('Your information has been processed, expect your order to be ready in 10-15 minutes.');">Submit</button>
                     </div>
                     
@@ -100,14 +100,11 @@
 
             <div class="col-2"></div>
             <div class="col-5">
-                <div class="currentOrder">
+                <div id="currentOrder">
                     <h4>Current order</h4>
                     <!-- items in the user's cart will be added here via js -->
-                    <button 
-                        onclick="var input = prompt('Please enter the letter of food item identifier (listed on the menu):');  
-                        var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
-                        var item = makeItem(input, input2);
-                        displayItem(shoppingCart.length);"
+                    <button id="addItem"
+                     
                     >Add Item</button>
                 </div>
             </div>

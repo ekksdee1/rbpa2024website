@@ -1,18 +1,4 @@
 var shoppingCart = [];
-
-/* const shoppingCartDisplay = [
-    ["Pretzel Bites.......$5.99", "Fried Pickles.......$5.99", "Cheese Curds........$5.99", "Cheese Bread........$11.99", "Mozzarella Sticks...$5.99"],
-    ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
-    ["Fish N' Chips"],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []
-]; */
 const menu = [
     ["Pretzel Bites", "Fried Pickles", "Cheese Curds", "Cheese Bread", "Mozzarella Sticks"],
     ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
@@ -26,7 +12,6 @@ const menu = [
     [],
     []
 ];
-
 const prices = [
     [5.99, 5.99, 5.99, 11.99, 5.99],
     [5.99, 5.99, 5.99],
@@ -40,24 +25,6 @@ const prices = [
     [],
     []
 ];
-
-function makeItem(input, input2){
-    const newItem = new foodItem(input, input2);
-    shoppingCart.push(newItem);
-    var name = menu[newItem.type][newItem.num];
-    alert(name + " added to your cart.");
-    return newItem;
-}
-
-function displayItem(index){
-    const item = shoppingCart[index];
-    const name = menu[item.type][item.num];
-    const price = prices[item.type][item.num];
-    
-    var newElement = document.createElement("p");
-    newElement.innerHTML = "" + name + "...$" + price;
-    document.getElementById("currentOrder").appendChild(newElement);
-}
 
 class foodItem {
     constructor(identifier, identifier2){
@@ -243,3 +210,32 @@ class foodItem {
         this.num = num;
     }
 }
+
+function makeItem(input, input2){
+    const newItem = new foodItem(input, input2);
+    var name = menu[newItem.type][newItem.num];
+    alert(name + " added to your cart.");
+    return newItem;
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+    function displayItem(index){
+        const item = shoppingCart[index];
+        const name = menu[item.type][item.num];
+        const price = prices[item.type][item.num];
+        
+        var newElement = document.createElement("p");
+        newElement.innerHTML = name + "...$" + price;
+    
+        var button = document.getElementById("addItem");
+        document.getElementById("currentOrder").insertBefore(newElement, button);
+    }
+
+    document.getElementById("addItem").addEventListener("click", function(){
+        var input = prompt('Please enter the letter of food item identifier (listed on the menu):');  
+        var input2 = prompt('Please enter the number portion of the food item identifier (listed on the menu):');
+        var item = makeItem(input, input2);
+        shoppingCart.push(item);
+        displayItem(shoppingCart.length - 1);
+    });
+});
