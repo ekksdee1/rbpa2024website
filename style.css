@@ -31,6 +31,12 @@ body
     color: white;
 }
 
+.body
+{
+    background-color: #443C34;
+    color: white;
+}
+
 .logo
 {
     height: clamp(20px, 3vw, 100px);;
