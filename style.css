@@ -25,6 +25,12 @@
     color:white;
 }
 
+body
+{
+    background-color: #443C34;
+    color: white;
+}
+
 .body
 {
     background-color: #443C34;
@@ -58,7 +64,7 @@ p
 
 h2
 {
-    font-size: 80px;
+    font-size: 40px;
 }
 
 img
