@@ -203,7 +203,7 @@ class foodItem {
         }
         else{
             type = 99;
-            alert("Letter not recognized");
+            alert("Food item identifier not recognized");
         }
 
         this.type = type;

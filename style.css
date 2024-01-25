@@ -61,6 +61,10 @@ h2
     font-size: 80px;
 }
 
+h4 {
+    color: white;
+}
+
 img
 {
     border-radius: 10px;
@@ -78,8 +82,6 @@ img
     border-width:2px !important;
     transition-duration: 0.1s;
 }
-
-
 
 #food-item:hover
 {
