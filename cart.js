@@ -2,8 +2,8 @@ var shoppingCart = [];
 const menu = [
     ["Pretzel Bites", "Fried Pickles", "Cheese Curds", "Cheese Bread", "Mozzarella Sticks"],
     ["Caesar Salad", "House Salad", "Grilled Chicken Salad"],
-    ["Fish N' Chips"],
-    [],
+    ["Fish N' Chips", "Grilled Salmon", "Shrimp Scampi"],
+    ["Classic American Cheeseburger", "Philly Cheese Steak", "Chicken Philly", "Create Your Own Sandwich"],
     [],
     [],
     [],
@@ -15,13 +15,13 @@ const menu = [
 const prices = [
     [5.99, 5.99, 5.99, 11.99, 5.99],
     [5.99, 5.99, 5.99],
-    [7.99],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
+    [7.99, 14.99, 14.99],
+    [8.99, 7.99, 7.99, 5.99],
+    [9.99, 12.99, 15.99, 10.99, 13.99, 16.99, 8.99, 11.99, 14.99],
+    [0, 0, 0, 0, 0, 0, 0, 1.99, 1.99],
+    [5.99, 6.99, 5.99, 4.99, 6.99],
+    [4.99, 4.99, 6.99, 4.99, 7.99, 7.99, 4.99, 6.99],
+    [0, 3.99, 2.99, 2.99, 2.99, 2.99, 2.99, 4.99, 4.99],
     [],
     []
 ];
