@@ -2,15 +2,15 @@
 <html>
     
 <head>
-<!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS stylesheet -->
-    <link href="style.css" rel="stylesheet">
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS stylesheet -->
+    <link href="style.css" rel="stylesheet">
     <!-- title of the page-->
-    <title>Game Day Grill Official Website - Reservations</title>
+    <title>Game Day Grill Official Website - Reservation</title>
 
 
     
@@ -19,15 +19,15 @@
     <body class="body">
 
         
-        <nav class="bar-of-nav navbar navbar-expand-sm ">
+        <nav class="bar-of-nav navbar navbar-expand-sm sticky-top">
             <div class="container-fluid">
-                <a id = "item" class="navbar-brand" href="#">Game Day Grill</a>
+                <a id = "item" class="navbar-brand" href="#"><img class = "logo" src = "Images/GDG.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a id = "item" class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a id = "item" class="nav-link active" aria-current="page" href="index.html">Home</a>
                         <a id = "item" class="nav-link" href="menu.html">Menu</a>
                         <a id = "item" class="nav-link" href="order.html">Checkout</a>
                         <a id = "item" class="nav-link" href="reservation.html">Reservations</a>
@@ -35,19 +35,24 @@
                 </div>
             </div>
         </nav>
+        <br>
 
         <div class = " text-center">
-            <h1 class = "main-title">Reservations and Events</h1>
+            <h1>Reservations and Events 2024</h1>
         </div>
 
-  
-        <button id="past">Previous</button><button id="next">Next</button>
+        <div id="buttonHolder">
+
+        <button id="past" style="display:none;">Previous</button><button id="next">Next</button>
+        <a href="specialreservation.html" style="float: right;"><button>Plan a Special Reservation</button></a>
+
+        </div>
 
         <!--January-->
-
+    
         <div id="january">
-
-            <table class="calender">
+        
+            <table class="calendar">
                 <h1 class="text-center">January</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -89,7 +94,7 @@
                     <td>21<br>Game day</td>
                     <td>22</td>
                     <td>23</td>
-                    <td>24</td>
+                    <td>24<br>Miller family Reservation<br>party of 4<br>6:00pm</td>
                     <td>25</td>
                     <td>26</td>
                     <td>27</td>
@@ -110,7 +115,7 @@
 
         <div id="february">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">February</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -134,7 +139,7 @@
                     <td>4</td>
                     <td>5</td>
                     <td>6</td>
-                    <td>7</td>
+                    <td>7<br>Smith family reservation<br>party of 5<br>12:30pm</td>
                     <td>8</td>
                     <td>9</td>
                     <td>10</td>
@@ -154,7 +159,7 @@
                     <td>20</td>
                     <td>21</td>
                     <td>22</td>
-                    <td>23</td>
+                    <td>23<br>Game day</td>
                     <td>24</td>
                 </tr>
                 <tr id="days">
@@ -173,7 +178,7 @@
 
         <div id="march">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">March</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -200,7 +205,7 @@
                     <td>6</td>
                     <td>7</td>
                     <td>8</td>
-                    <td>9</td>
+                    <td>9<br>Roberts family birthday<br>party of 12<br>1:00pm</td>
                 </tr>
                 <tr id="days">
                     <td>10</td>
@@ -209,10 +214,10 @@
                     <td>13</td>
                     <td>14</td>
                     <td>15</td>
-                    <td>16</td>
+                    <td>16<br>Game day</td>
                 </tr>
                 <tr id="days">
-                    <td>17</td>
+                    <td>17<br>Game day</td>
                     <td>18</td>
                     <td>19</td>
                     <td>20</td>
@@ -224,7 +229,7 @@
                     <td>24<br></td>
                     <td>25</td>
                     <td>26</td>
-                    <td>27</td>
+                    <td>27<br>Jones family reservation<br>party of 4<br>12:00pm</td>
                     <td>28</td>
                     <td>29</td>
                     <td>30</td>
@@ -245,7 +250,7 @@
 
         <div id="april">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">April</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -259,7 +264,7 @@
                 <tr id="days">
                     <td class="different-month">31</td>
                     <td>1</td>
-                    <td>2</td>
+                    <td>2<br>Trivia Night</td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
@@ -267,7 +272,7 @@
                 </tr>
                 <tr id="days">
                     <td>7</td>
-                    <td>8</td>
+                    <td>8<br>Johnson family reservation<br>party of 7<br>7:30pm</td>
                     <td>9</td>
                     <td>10</td>
                     <td>11</td>
@@ -280,11 +285,11 @@
                     <td>16</td>
                     <td>17</td>
                     <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
+                    <td>19<br>Game day</td>
+                    <td>20<br>Game day</td>
                 </tr>
                 <tr id="days">
-                    <td>21</td>
+                    <td>21<br>Game day</td>
                     <td>22</td>
                     <td>23</td>
                     <td>24</td>
@@ -308,7 +313,7 @@
 
         <div id="may">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">May</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -323,15 +328,15 @@
                     <td class="different-month">28</td>
                     <td class="different-month">29</td>
                     <td class="different-month">30</td>
-                    <td>1</td>
-                    <td>2</td>
+                    <td>1<br>Martin family reservation<br>party of 3<br>6:00pm</td>
+                    <td>2<br>Anderson family reservation<br>party of 5<br>12:00pm</td>
                     <td>3</td>
                     <td>4</td>
                 </tr>
                 <tr id="days">
                     <td>5</td>
                     <td>6</td>
-                    <td>7</td>
+                    <td>7<br>Trivia Night</td>
                     <td>8</td>
                     <td>9</td>
                     <td>10</td>
@@ -350,7 +355,7 @@
                     <td>19</td>
                     <td>20</td>
                     <td>21</td>
-                    <td>22</td>
+                    <td>22<br>Brown family reservation<br>party of 10<br>6:45pm</td>
                     <td>23</td>
                     <td>24</td>
                     <td>25</td>
@@ -371,7 +376,7 @@
 
         <div id="june">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">June</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -394,14 +399,14 @@
                 <tr id="days">
                     <td>2</td>
                     <td>3</td>
-                    <td>4</td>
+                    <td>4<br>Trivia Night</td>
                     <td>5</td>
                     <td>6</td>
                     <td>7</td>
                     <td>8</td>
                 </tr>
                 <tr id="days">
-                    <td>9</td>
+                    <td>9<br>Jackson family reservation<br>party of 5<br>12:00pm</td>
                     <td>10</td>
                     <td>11</td>
                     <td>12</td>
@@ -410,13 +415,13 @@
                     <td>15</td>
                 </tr>
                 <tr id="days">
-                    <td>16</td>
+                    <td>16<br>Game day</td>
                     <td>17</td>
                     <td>18</td>
                     <td>19</td>
                     <td>20</td>
                     <td>21</td>
-                    <td>22</td>
+                    <td>22<br>Game day</td>
                 </tr>
                 <tr id="days">
                     <td>23</td>
@@ -443,7 +448,7 @@
 
         <div id="july">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">July</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -457,7 +462,7 @@
                 <tr id="days">
                     <td class="different-month">30</td>
                     <td>1</td>
-                    <td>2</td>
+                    <td>2<br>Trivia Night</td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
@@ -485,7 +490,7 @@
                     <td>21</td>
                     <td>22</td>
                     <td>23</td>
-                    <td>24</td>
+                    <td>24<br>Taylor family reservation<br>party of 7<br>6:00pm</td>
                     <td>25</td>
                     <td>26</td>
                     <td>27</td>
@@ -506,7 +511,7 @@
 
         <div id="august">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">August</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -529,7 +534,7 @@
                 <tr id="days">
                     <td>4</td>
                     <td>5</td>
-                    <td>6</td>
+                    <td>6<br>Trivia Night</td>
                     <td>7</td>
                     <td>8</td>
                     <td>9</td>
@@ -550,8 +555,8 @@
                     <td>20</td>
                     <td>21</td>
                     <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
+                    <td>23<br>Game day</td>
+                    <td>24<br>Game day</td>
                 </tr>
                 <tr id="days">
                     <td>25</td>
@@ -559,8 +564,8 @@
                     <td>27</td>
                     <td>28</td>
                     <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
+                    <td>30<br>Game day</td>
+                    <td>31<br>Game day</td>
                 </tr>
             </table>
         </div>
@@ -569,7 +574,7 @@
 
         <div id="september">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">September</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -583,7 +588,7 @@
                 <tr id="days">
                     <td>1</td>
                     <td>2</td>
-                    <td>3</td>
+                    <td>3<br>Trivia Night</td>
                     <td>4</td>
                     <td>5</td>
                     <td>6</td>
@@ -618,7 +623,7 @@
                 </tr>
                 <tr id="days">
                     <td>29</td>
-                    <td>30</td>
+                    <td>30<br>Roberts family birthday<br>party of 15<br>7:00pm</td>
                     <td class="different-month">1</td>
                     <td class="different-month">2</td>
                     <td class="different-month">3</td>
@@ -632,7 +637,7 @@
 
         <div id="october">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">October</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -646,11 +651,11 @@
                 <tr id="days">
                     <td class="different-month">29</td>
                     <td class="different-month">30</td>
-                    <td>1</td>
+                    <td>1<br>Trivia Night</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
-                    <td>5</td>
+                    <td>5<br>Martin family reservation<br>party of 8<br>4:00pm</td>
                 </tr>
                 <tr id="days">
                     <td>6</td>
@@ -689,7 +694,7 @@
                     <td>30</td>
                 </tr>
                 <tr id="days">
-                    <td>31</td>
+                    <td>31<br>Halloween Party</td>
                     <td class="different-month">1</td>
                     <td class="different-month">2</td>
                     <td class="different-month">3</td>
@@ -704,7 +709,7 @@
 
         <div id="november">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">November</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -718,7 +723,7 @@
                 <tr id="days">
                     <td class="different-month">31</td>
                     <td>1</td>
-                    <td>2</td>
+                    <td>2<br>Trivia Night</td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
@@ -752,7 +757,7 @@
                     <td>27</td>
                 </tr>
                 <tr id="days">
-                    <td>28</td>
+                    <td>28<br>Thanksgiving Feast</td>
                     <td>29</td>
                     <td>30</td>
                     <td class="different-month">1</td>
@@ -767,7 +772,7 @@
 
         <div id="december">
 
-            <table class="calender">
+            <table class="calendar">
                 <h1 class="text-center">December</h1>
                 <tr id="weekDays">
                     <th>Sunday</th>
@@ -790,7 +795,7 @@
                 <tr id="days">
                     <td>5</td>
                     <td>6</td>
-                    <td>7</td>
+                    <td>7<br>Trivia Night</td>
                     <td>8</td>
                     <td>9</td>
                     <td>10</td>
@@ -811,8 +816,8 @@
                     <td>21</td>
                     <td>22</td>
                     <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
+                    <td>24<br>Christmas Eve<br>Closed</td>
+                    <td>25<br>Christmas<br>Closed</td>
                 </tr>
                 <tr id="days">
                     <td>26</td>
@@ -824,128 +829,11 @@
                     <td class="different-month">2</td>
                 </tr>
             </table>
+        
         </div>
 
-        <button>Plan a Special Reservation</button>
+        <br><br>
 
-        <script>
-
-let monthNum = 0;
-var next = document.getElementById("next");
-var past = document.getElementById("past");
-var january = document.getElementById("january");
-var february = document.getElementById("february");
-var march = document.getElementById("march");
-var april = document.getElementById("april");
-var may = document.getElementById("may");
-var june = document.getElementById("june");
-var july = document.getElementById("july");
-var august = document.getElementById("august");
-var september = document.getElementById("september");
-var october = document.getElementById("october");
-var november = document.getElementById("november");
-var december = document.getElementById("december");
-
-function nextMonth() {
-    monthNum++;
-
-    // Reset monthNum to 0 when it reaches 12
-    if (monthNum === 12) {
-        monthNum = 0;
-    }
-
-    updateMonthDisplay();
-}
-
-function pastMonth() {
-    // Reset monthNum to 11 when it goes below 0
-    if (monthNum === 0) {
-        monthNum = 11;
-    } else {
-        monthNum--;
-    }
-
-    updateMonthDisplay();
-}
-
-function updateMonthDisplay() {
-    const months = [january, february, march, april, may, june, july, august, september, october, november, december];
-
-    for (let i = 0; i < months.length; i++) {
-        if (i === monthNum) {
-            months[i].style.display = "contents";
-        } else {
-            months[i].style.display = "none";
-        }
-    }
-}
-
-next.addEventListener("click", nextMonth);
-past.addEventListener("click", pastMonth);
-
-        </script>
+        <script src="reservation.js"></script>
     </body>
 </html>
-
-    <style>
-        td {
-            height: 150px;
-            width: 150px;
-        }
-
-        .calender {
-            border-style: double;
-            border-width: 3px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .different-month {
-            color: gray;
-        }
-
-        #february {
-            display: none; 
-        }
-
-        #march {
-            display: none; 
-        }
-
-        #april {
-            display: none; 
-        }
-
-        #may {
-            display: none; 
-        }
-
-        #june {
-            display: none; 
-        }
-
-        #july {
-            display: none; 
-        }
-
-        #august {
-            display: none; 
-        }
-
-        #september {
-            display: none; 
-        }
-
-        #october {
-            display: none; 
-        }
-
-        #november {
-            display: none; 
-        }
-
-        #december {
-            display: none; 
-        }
-
-    </style>
