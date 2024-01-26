@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS stylesheet -->
-    <link href="style.css" rel="stylesheet">
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- title of the page-->
-    <title>Game Day Grill Official Website - Ordering</title>
-</head> 
-<body>
-    <!-- navbar -->
-    <nav class="bar-of-nav navbar navbar-expand-sm sticky-top">
-        <div class="container-fluid">
-            <a id = "item" class="navbar-brand" href="#"><img class = "logo" src = "Images/GDG.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a id = "item" class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a id = "item" class="nav-link" href="menu.html">Menu</a>
-                    <a id = "item" class="nav-link" href="order.html">Checkout</a>
-                    <a id = "item" class="nav-link" href="reservation.html">Reservations</a>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- CSS stylesheet -->
+        <link href="style.css" rel="stylesheet">
+        <!-- title of the page-->
+        <title>Game Day Grill Official Website - Special Reservation</title>
+    </head> 
+
+    <body>
+        <!-- navbar -->
+        <nav class="bar-of-nav navbar navbar-expand-sm sticky-top">
+            <div class="container-fluid">
+                <a id = "item" class="navbar-brand" href="#"><img class = "logo" src = "Images/GDG.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a id = "item" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a id = "item" class="nav-link" href="menu.html">Menu</a>
+                        <a id = "item" class="nav-link" href="order.html">Checkout</a>
+                        <a id = "item" class="nav-link" href="reservation.html">Reservations</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <br>
+        </nav>
+        <br>
 
-    <!-- content -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <h3>Special Reservation</h3>
-                <br>
-                <h4>Contact Info</h4>
-                <label for="fName" class="form-label">First name</label><input type="text" class="form-control" name="fName" placeholder="John"><br>
-                <label for="lName" class="form-label">Last name</label><input type="text" class="form-control" name="lName" placeholder="Doe"><br>
-                <label for="pNumber" class="form-label">Phone number</label><input type="text" class="form-control" name="pNumber" placeholder="(XXX) XXX-XXXX"><br>
-                <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com"><br>
+        <!-- content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <h3>Special Reservation</h3>
+                    <br>
+                    <h4>Contact Info</h4>
+                    <label for="fName" class="form-label">First name</label><input type="text" class="form-control" name="fName" placeholder="John"><br>
+                    <label for="lName" class="form-label">Last name</label><input type="text" class="form-control" name="lName" placeholder="Doe"><br>
+                    <label for="pNumber" class="form-label">Phone number</label><input type="text" class="form-control" name="pNumber" placeholder="(XXX) XXX-XXXX"><br>
+                    <label for="email" class="form-label">Email</label><input type="text" class="form-control" name="email" placeholder="abc@mail.com"><br>
 
-                <h4>Reservation information</h4>
-                <label for="fPeople" class="form-label">Number of people</label><input type="text" class="form-control" name="fPeople" placeholder="##"><br>
-                <label for="fDate" class="form-label">Date of reservation</label><input type="text" class="form-control" name="fDate" placeholder="XX/XX/XXXX"><br>
-                <label for="fOther" class="form-label">Other Information (if any)</label><input type="text" class="form-control" name="fOther" placeholder="(e.g. Your birthday, allergies, etc.)"><br>
+                    <h4>Reservation information</h4>
+                    <label for="fPeople" class="form-label">Number of people</label><input type="text" class="form-control" name="fPeople" placeholder="##"><br>
+                    <label for="fDate" class="form-label">Date of reservation</label><input type="text" class="form-control" name="fDate" placeholder="XX/XX/XXXX"><br>
+                    <label for="fOther" class="form-label">Other Information (if any)</label><input type="text" class="form-control" name="fOther" placeholder="(e.g. Your birthday, allergies, etc.)"><br>
 
-                <Button onclick="alert('Reservation submited')">Reserve</Button>
-                <br><br>
+                    <Button onclick="alert('Thank you for submitting the reservation.')">Reserve</Button>
+                    <br><br>
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
         </div>
-    </div>
-</body>
+    </body>
+</html>
